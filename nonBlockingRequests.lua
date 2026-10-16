@@ -2,6 +2,7 @@
 -- Non-blocking HTTP(S) client for Ashita addons
 -- Handles HTTP and HTTPS requests without blocking the main thread
 -- Call processAll() from your d3d_present callback to advance requests
+-- Version: 1.1
 -----------------------------------------------------------------------------
 
 local socket = require('socket')
