@@ -58,3 +58,14 @@ end)
 - Handles multiple concurrent requests
 
 That's it. Just make sure to call processAll() regularly.
+
+## Standalone tests on Windows
+
+From the repo root, run:
+
+```powershell
+powershell -NoProfile -ExecutionPolicy Bypass -File .\tests\run-tests.ps1
+```
+
+The suite uses Ashita's MoonJIT and installed socket libraries against local HTTP
+and HTTPS servers. See [tests/README.md](tests/README.md) for setup and options.
